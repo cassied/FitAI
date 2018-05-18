@@ -1,1 +1,1 @@
-# personaltrainerAI
+# FitAI
