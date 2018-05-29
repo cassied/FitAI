@@ -1,7 +1,7 @@
 ### BMI and calorie calculator
 
 def main ():
-    a = input (print ("enter 1 to the BMI calculator, or enter 2 to the calorie calculator"))
+    a = input ("enter 1 to the BMI calculator, or enter 2 to the calorie calculator")
     if a == "1":
         BMIcalc ()
     elif a == "2":
@@ -11,10 +11,10 @@ def main ():
         main ()
 
 def BMIcalc ():
-    height = eval (input (print ("please enter your height: (m)")))
-    weight = eval (input (print ("please enter your weight: (kg)")))
+    height = eval (input ("please enter your height: (m)"))
+    weight = eval (input ("please enter your weight: (kg)"))
     BMI = weight / (height ** 2)
-    print ("your BMI is: ", BMI)
+    print ("your BMI is: ", "%.2f" % BMI)
     if BMI <= 16:
         print ("you need to eat more and get more nutrition, you are too thin")
     elif 16 < BMI <= 18.5:
@@ -32,10 +32,10 @@ def BMIcalc ():
     x = input ("press enter to quit")
 
 def caloriecalc ():
-    height = eval (input (print ("please enter your height: (cm)")))
-    weight = eval (input (print ("please enter your weight: (kg)")))
-    age = eval (input (print ("please enter your age: (years)")))
-    gender = input (print ("please enter your gender: (male/female)"))
+    height = eval (input ("please enter your height: (cm)"))
+    weight = eval (input ("please enter your weight: (kg)"))
+    age = eval (input ("please enter your age: (years)"))
+    gender = input ("please enter your gender: (male/female)")
     if gender == "male":
         BMR = 10 * weight + 6.25 * height - 5 * age + 5
     elif gender == "female":
