@@ -17,18 +17,25 @@ def BMIcalc ():
     print ("your BMI is: ", "%.2f" % BMI)
     if BMI <= 16:
         print ("you need to eat more and get more nutrition, you are too thin")
+        return BMI
     elif 16 < BMI <= 18.5:
         print ("your weight is a little bit light, the best way for you is to eat more")
+        return BMI
     elif 18.5 < BMI <= 25:
         print ("great, you are in the right way, keep going on")
+        return BMI
     elif 25 < BMI <= 30:
         print ("oops, you are just a little bit heavy. However, stand in front of the mirror to watch yourself, if you are not fat, you must have some muscles")
+        return BMI
     elif 30 < BMI <= 35:
         print ("hmmm... Compare with other people, you are heavy. However, stand in front of the mirror to watch yourself, if you are not fat, you must have some muscles")
+        return BMI
     elif 35 < BMI <= 40:
         print ("Hey, do something, you need to keep fit. However, stand in front of the mirror to watch yourself, if you are not fat, you must have some muscles")
+        return BMI
     elif 40 < BMI:
         print (" Wow, your BMI is very hight, please try to keep fit. However, if you are a body builder, just ignore it")
+        return BMI
     x = input ("press enter to quit")
 
 def caloriecalc ():
@@ -38,9 +45,12 @@ def caloriecalc ():
     gender = input ("please enter your gender: (male/female)")
     if gender == "male":
         BMR = 10 * weight + 6.25 * height - 5 * age + 5
+    
     elif gender == "female":
         BMR = 10 * weight + 6.25 * height - 5 * age - 161
-    print ("you should get ", BMR, "Calories per day. If you get ", BMR + 500, "Calories per day, you can gain 1lb per week. If you get", BMR - 500, "Calories per day, you can lose 1lb per week")
+    
+    print ("you should get ", "%.2f" % BMR, "Calories per day. If you get ", BMR + 500, "Calories per day, you can gain 1lb per week. If you get", float((int(100*(BMR - 500))/100)), "Calories per day, you can lose 1lb per week")
+    return BMR
     x = input ("press enter to quit")
     
 main ()
