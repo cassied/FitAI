@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<div class="header">
+  <img src="logo.png" alt="logo" />
+  <h1>#GETFIT</h1>
+</div>
+
+<title>User Login</title>
+</head>
+
+<body>
+  <h2>User Login </h2>
+  <form name="login" method="post" action="../cgi-bin/createuser.py">
+   Username: <input type="text" name="username"><br>
+   Firstname: <input type="text" name="firstname"><br>
+   Surname: <input type="text" name="surname"><br>
+   Password:  <input type="password" name="password"><br>
+   Remember Me: <input type="checkbox" name="rememberme" value="1"><br>
+   <input type="submit" name="submit" value="Login">
+  </form>
+  <br>
+  <h2>User information</h2>
+  <form name="uinfo" method="post" action="../cgi-bin/passtoworkouts.py">
+   Age: <input type="text" name="age"><br>
+   Height: <input type="text" name="height"><br>
+   Weight: <input type="text" name="weight"><br>
+   Workout: <input type="text" name="workout"><br>
+   <input type="submit" name="submit" value="idk">
+  </form>
+<a href="http://csc2.madonna.edu/~dherron/register.html" >register</a>
+</body>
+</html>
