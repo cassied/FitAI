@@ -4,7 +4,7 @@ def BMIcalc (feet,inches,lbs):
     kgs = lbs * 0.453495
     #print("heightcm"+str(heightm))
     BMI = kgs / (heightm ** 2)
-    print ("your BMI is: ", "%.2f" % BMI)
+    BMI = float(int(BMI * 10000) / 10000)
     #if BMI <= 16:
         #print ("you need to eat more and get more nutrition, you are too thin")
         #return BMI
@@ -24,6 +24,7 @@ def BMIcalc (feet,inches,lbs):
         #print ("Hey, do something, you need to keep fit. However, stand in front of the mirror to watch yourself, if you are not fat, you must have some muscles")
         #return BMI
     #elif 40 < BMI:
-        #print (" Wow, your BMI is very hight, please try to keep fit. However, if you are a body builder, just ignore it")
+        #print (" Wow, your BMI is very high, please try to keep fit. However, if you are a body builder, just ignore it")
     return BMI
     #x = input ("press enter to quit")
+
