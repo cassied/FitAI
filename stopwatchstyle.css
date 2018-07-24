@@ -46,3 +46,18 @@ h2
   letter-spacing: 2px;
   margin: 200px 0 0 ;
 }
+input[type=button] {
+    background-color: #48633B;
+    border: solid 2px #35492C;
+    color: #DAD6D6;
+    padding: 16px 40px 16px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+input[type=text] {
+    padding: 10px;
+    margin: 4px;
+    box-sizing: border-box;
+}
